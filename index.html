@@ -1,0 +1,404 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pet-Friendly City Campaign</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  </head>
+  <body>
+    <div id="app">
+      <!-- Header and Navigation -->
+      <header class="header">
+        <div class="container">
+          <div class="logo">
+            <span class="paw-icon"><i class="fas fa-paw"></i></span>
+            <h2>PawCity</h2>
+          </div>
+          <nav class="nav">
+            <div class="mobile-menu-toggle">
+              <i class="fas fa-bars"></i>
+            </div>
+            <ul class="nav-links">
+              <li><a href="#home" class="active">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#volunteer">Volunteer</a></li>
+              <li><a href="#impact-stories">Impact Stories</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+
+      <!-- Hero Section -->
+      <section id="home" class="hero">
+        <div class="container">
+          <div class="hero-content">
+            <h1 class="slogan">Making Cities <span class="highlight">Paw-some</span>! 🐾</h1>
+            <p class="hero-description">Join our community of pet lovers creating spaces where pets and people thrive together.</p>
+            <button class="cta-button">Join The Movement <i class="fas fa-arrow-right"></i></button>
+          </div>
+        </div>
+        <div class="hero-overlay"></div>
+      </section>
+
+      <!-- About Section -->
+      <section id="about" class="about">
+        <div class="container">
+          <div class="section-header">
+            <h2>About Our Campaign <span class="emoji">🐶</span></h2>
+          </div>
+          <div class="about-content">
+            <div class="about-text">
+              <p>Our Pet-Friendly City Campaign is transforming urban spaces to welcome our furry friends. We believe that cities are better when they accommodate all residents—including those with four legs!</p>
+              <p>Through advocacy, education, and community projects, we're creating a world where pets and their humans can live harmoniously in urban environments.</p>
+              <div class="stats-container">
+                <div class="stat">
+                  <span class="stat-number">50+</span>
+                  <span class="stat-label">Pet Parks Created</span>
+                </div>
+                <div class="stat">
+                  <span class="stat-number">1,000+</span>
+                  <span class="stat-label">Volunteers</span>
+                </div>
+                <div class="stat">
+                  <span class="stat-number">25</span>
+                  <span class="stat-label">Cities Involved</span>
+                </div>
+              </div>
+            </div>
+            <div class="about-image">
+              <img src="https://images.pexels.com/photos/1108099/pexels-photo-1108099.jpeg" alt="Happy dog in park">
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Volunteer Section -->
+      <section id="volunteer" class="volunteer">
+        <div class="container">
+          <div class="section-header">
+            <h2>Become a Volunteer <span class="emoji">🐱</span></h2>
+            <p>Join our team of passionate advocates making a difference for pets in cities everywhere.</p>
+          </div>
+          <div class="volunteer-content">
+            <form id="volunteer-form" class="volunteer-form">
+              <div class="form-group">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" required>
+              </div>
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+              </div>
+              <div class="form-group">
+                <label for="city">City</label>
+                <input type="text" id="city" name="city" required>
+              </div>
+              <div class="form-group">
+                <label for="role">Role Preference</label>
+                <select id="role" name="role">
+                  <option value="event-coordinator">Event Coordinator</option>
+                  <option value="pet-ambassador">Pet Ambassador</option>
+                  <option value="community-outreach">Community Outreach</option>
+                  <option value="social-media">Social Media Manager</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="message">Tell us why you'd like to volunteer</label>
+                <textarea id="message" name="message" rows="4"></textarea>
+              </div>
+              <button type="submit" class="submit-button">Submit Application</button>
+            </form>
+          </div>
+        </div>
+      </section>
+
+
+      <!-- Impact Stories Section -->
+      <section id="impact-stories" class="impact-stories">
+        <div class="container">
+          <div class="section-header">
+            <h2>Impact Stories 🐾</h2>
+            <p>Read heartwarming tales of pets and their human companions.</p>
+          </div>
+          
+          <!-- Featured Story -->
+          <div class="featured-story">
+            <div class="featured-story-content">
+              <div class="featured-story-image">
+                <img src="images/feature_story.png" alt="Sarah and Luna the service dog">
+              </div>
+              <div class="featured-story-text">
+                <h3>Luka's Journey: From Pune Streets to a Loving Home in Bangalore</h3>
+                <div class="featured-quote">
+                  <i class="fas fa-quote-left"></i>
+                  <p>"Remember Luka? We flew him from Pune to Bangalore for his adoption!"</p>
+                  <i class="fas fa-quote-right"></i>
+                </div>
+                <p class="featured-author">— @_bbpaws</p>
+                <a href="https://www.reddit.com/r/bangalore/comments/1cem47n/remember_luka_we_flew_him_from_pune_to_bangalore/?" class="read-more-btn">Read The Full Journey</a>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Stories Carousel -->
+          <div class="stories-carousel-container">
+            <h3 class="stories-section-title">More Heartwarming Stories</h3>
+            <div class="stories-carousel">
+              <!-- Story Card 1 -->
+              <div class="story-card">
+                <div class="story-image">
+                  <img src="images/story1.png" alt="Max the Therapy Dog">
+                </div>
+                <div class="story-content">
+                  <h4>Love & Loyalty: Kerala Student's Dog Rescue from Ukraine</h4>
+                  <p>Arya Aldrin, a Kerala resident who refused to leave Ukraine without her five-month-old Siberian puppy, Zaira is facing one last hurdle to bring her home.</p>
+                  <a href="https://www.indiatoday.in/india/story/kerala-student-arya-puppy-zaira-ukraine-evacuation-russia-conflict-1920335-2022-03-03" class="story-link">Read Full Story <i class="fas fa-arrow-right"></i></a>
+                </div>
+              </div>
+              
+              <!-- Story Card 2 -->
+              <div class="story-card">
+                <div class="story-image">
+                  <img src="images/story2.png" alt="Bella the Emotional Support Cat">
+                </div>
+                <div class="story-content">
+                  <h4>Blue Cross of India's Rescue Missions</h4>
+                  <p>From saving a puppy trapped in a quarry to rescuing a kitten guarded by a dog in a well, Blue Cross of India shares numerous rescue stories.</p>
+                  <a href="https://www.thehindu.com/society/blue-cross-of-indias-now-uses-whatsapp-for-rescuing-animals/article28684881.ece" class="story-link">Read Full Story <i class="fas fa-arrow-right"></i></a>
+                </div>
+              </div>
+              
+              <!-- Story Card 3 -->
+              <div class="story-card">
+                <div class="story-image">
+                  <img src="images/story3.png" alt="Cooper the Guide Dog">
+                </div>
+                <div class="story-content">
+                  <h4>Bengaluru's New Cat Rescue & Adoption Centre</h4>
+                  <p>A dedicated facility for feral, injured, and abandoned cats has opened in Yelachenahalli, Bengaluru.</p>
+                  <a href="https://timesofindia.indiatimes.com/city/bengaluru/bengaluru-gets-new-cat-rescue-rehabilitation-adoption-centre/articleshow/117769895.cms#:~:text=We%20are%20proud%20to%20partner,animal%20ambulance%20service%20across%20Bengaluru." class="story-link">Read Full Story <i class="fas fa-arrow-right"></i></a>
+                </div>
+              </div>
+              
+              <!-- Story Card 4 -->
+              <div class="story-card">
+                <div class="story-image">
+                  <img src="images/story4.png" alt="Rosie the Reading Buddy">
+                </div>
+                <div class="story-content">
+                  <h4>‘Billy’ Arjan Singh: The Hunter-Turned-Conservationist Who Spent Over 40 Years Protecting Tigers</h4>
+                  <p>‘Billy’ Arjan Singh, once a hunter, became a legendary conservationist dedicated to saving India's tigers, transforming Dudhwa into a tiger reserve and founding 'Tiger Haven'. His tireless efforts earned him global recognition and reshaped India's wildlife conservation narrative.</p>
+                  <a href="https://thebetterindia.com/393021/billy-arjan-singh-wildlife-conservationist-dudhwa-forest-tiger-haven-society/" class="story-link">Read Full Story <i class="fas fa-arrow-right"></i></a>
+                </div>
+              </div>
+            </div>
+
+            
+            
+            <!-- Carousel Navigation -->
+            <div class="carousel-nav">
+              <button class="prev-btn"><i class="fas fa-chevron-left"></i></button>
+              <div class="carousel-dots">
+                <span class="dot active"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+              </div>
+              <button class="next-btn"><i class="fas fa-chevron-right"></i></button>
+            </div>
+          </div>
+          
+          <!-- Submit Your Story CTA -->
+          <div class="submit-story-cta">
+            <div class="cta-content">
+              <h3>Has a pet changed your life?</h3>
+              <p>Share your story with us and inspire others in our community!</p>
+              <button class="submit-story-btn">Submit Your Story <i class="fas fa-paw"></i></button>
+            </div>
+            <div class="cta-decoration">
+              <img src="https://images.pexels.com/photos/1108099/pexels-photo-1108099.jpeg" alt="Dog and owner silhouette at sunset">
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact Section -->
+      <section id="contact" class="contact">
+        <div class="container">
+          <div class="section-header">
+            <h2>Contact Us <span class="emoji">📧</span></h2>
+            <p>Have questions or want to get involved? Reach out to our team.</p>
+          </div>
+          <div class="contact-content">
+            <div class="contact-info">
+              <div class="contact-item">
+                <i class="fas fa-envelope"></i>
+                <p>mail@collegetips.in</p>
+              </div>
+              <div class="contact-item">
+                <i class="fas fa-phone"></i>
+                <p>+91 7024577333</p>
+              </div>
+              <div class="social-links">
+                <a href="https://www.facebook.com/collegetips.in/" class="social-link"><i class="fab fa-facebook"></i></a>
+                <a href="https://x.com/CollegeTips_in" class="social-link"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.instagram.com/collegetips.in/" class="social-link"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.youtube.com/channel/UCcbf5sZkxsBGYj9Dr7K9QEA" class="social-link"><i class="fab fa-youtube"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Footer -->
+      <footer class="footer">
+        <div class="container">
+          <p>&copy; 2025 Pet-Friendly City Campaign. All rights reserved.</p>
+          <p>Made with <i class="fas fa-heart"></i> for pets everywhere</p>
+        </div>
+      </footer>
+    </div>
+    <script type="module" src="/main.js"></script>
+  
+  <!-- Font Awesome for icons -->
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  
+  <!-- Tab functionality script -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      // Get all tab buttons and panels
+      const tabButtons = document.querySelectorAll('.tab-btn');
+      const tabPanels = document.querySelectorAll('.tab-panel');
+      
+      // Add click event to each tab button
+      tabButtons.forEach(button => {
+        button.addEventListener('click', () => {
+          // Remove active class from all buttons and panels
+          tabButtons.forEach(btn => btn.classList.remove('active'));
+          tabPanels.forEach(panel => panel.classList.remove('active'));
+          
+          // Add active class to clicked button
+          button.classList.add('active');
+          
+          // Get the tab to activate from data attribute
+          const tabToActivate = button.getAttribute('data-tab');
+          
+          // Find and activate the corresponding panel
+          const panelToActivate = document.getElementById(tabToActivate);
+          if (panelToActivate) {
+            panelToActivate.classList.add('active');
+          }
+        });
+      });
+      
+      // Animate progress bars when they come into view
+      const progressBars = document.querySelectorAll('.progress');
+      
+      // Create an intersection observer
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            // If the element is visible, animate it
+            setTimeout(() => {
+              entry.target.style.width = entry.target.style.width || entry.target.getAttribute('style').split('width:')[1].split(';')[0];
+            }, 300);
+            // Unobserve after animation
+            observer.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.5 });
+      
+      // Observe each progress bar
+      progressBars.forEach(bar => {
+        observer.observe(bar);
+      });
+      
+      // Stories Carousel Functionality
+      const carousel = document.querySelector('.stories-carousel');
+
+      if (carousel) {
+        const prevBtn = document.querySelector('.prev-btn');
+        const nextBtn = document.querySelector('.next-btn');
+        const dots = document.querySelectorAll('.dot');
+        const cards = document.querySelectorAll('.story-card');
+        let currentIndex = 0;
+        let cardWidth = cards.length > 0 ? cards[0].offsetWidth + 20 : 0; // card width + margin
+        // Set first dot as active
+        if (dots.length > 0) {
+          dots[0].classList.add('active');
+        }
+        
+        // Function to scroll to a specific card
+        function scrollToCard(index) {
+          if (index < 0) {
+            index = cards.length - 1; // Loop to the last card
+          } else if (index >= cards.length) {
+            index = 0; // Loop to the first card
+          }
+          
+          currentIndex = index;
+          const scrollPosition = index * cardWidth;
+          carousel.scrollTo({
+            left: scrollPosition,
+            behavior: 'smooth'
+          });
+          
+          // Update active dot
+          dots.forEach((dot, i) => {
+            dot.classList.toggle('active', i === index);
+          });
+        }
+        
+        // Previous button click
+        if (prevBtn) {
+
+          prevBtn.addEventListener('click', () => {
+            scrollToCard(currentIndex - 1);
+          });
+        }
+        
+        // Next button click
+        if (nextBtn) {
+
+          nextBtn.addEventListener('click', () => {
+            scrollToCard(currentIndex + 1);
+          });
+        }
+        
+        // Dot click
+        dots.forEach((dot, i) => {
+          dot.addEventListener('click', () => {
+            scrollToCard(i);
+          });
+        });
+        
+        // Handle scroll event to update dots
+        carousel.addEventListener('scroll', () => {
+          const scrollPosition = carousel.scrollLeft;
+          const newIndex = Math.round(scrollPosition / cardWidth);
+          
+          if (newIndex !== currentIndex) {
+            currentIndex = newIndex;
+            dots.forEach((dot, i) => {
+              dot.classList.toggle('active', i === currentIndex);
+            });
+          }
+        });
+
+        // Recalculate cardWidth on window resize
+        window.addEventListener('resize', () => {
+          cardWidth = cards.length > 0 ? cards[0].offsetWidth + 20 : 0;
+          scrollToCard(currentIndex); // Adjust scroll position after resize
+        });
+
+      }
+    });
+  </script>
+  </body>
+</html>
